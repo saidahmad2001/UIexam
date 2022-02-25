@@ -7,9 +7,6 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import androidx.viewpager2.widget.ViewPager2
-import com.example.uiexam.controller.SharedPref
-
-import com.example.uiexam.model.EntryPage
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 

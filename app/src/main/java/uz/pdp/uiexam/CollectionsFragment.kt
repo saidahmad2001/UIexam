@@ -1,4 +1,4 @@
-package com.example.uiexam.fragments
+package uz.pdp.uiexam
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,9 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.uiexam.R
-import com.example.uiexam.adapters.CollectionAdapter
-import com.example.uiexam.model.Collection
+import uz.pdp.uiexam.CollectionAdapter
+import uz.pdp.uiexam.R
 
 class CollectionsFragment : Fragment() {
 

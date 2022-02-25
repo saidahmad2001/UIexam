@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.uiexam.model.EntryPage
 
 class EntryAdapter(private val items: ArrayList<EntryPage>) :
     RecyclerView.Adapter<EntryAdapter.EntryVH>() {

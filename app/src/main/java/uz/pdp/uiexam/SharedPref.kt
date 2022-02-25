@@ -1,4 +1,4 @@
-package com.example.uiexam.controller
+package uz.pdp.uiexam
 
 import android.content.Context
 import androidx.core.content.edit
