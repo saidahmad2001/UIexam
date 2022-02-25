@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="100dp"
-    android:layout_height="70dp"
-    android:orientation="vertical"
-    app:cardCornerRadius="10dp"
-    android:layout_marginEnd="10dp">
+    android:layout_height="100dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/category_background"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivCategoryPhoto"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="1">
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:adjustViewBounds="true"
+        android:background="@drawable/iv_back"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:shapeAppearanceOverlay="@style/circleTop" />
 
-        <ImageView
-            android:id="@+id/ivCategoryPhoto"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.8"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher_background" />
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.2"
+        android:text="Restaurants"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
 
-        <TextView
-            android:id="@+id/tvCategory"
-            android:layout_width="match_parent"
-            android:textColor="@color/black"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="0.2"
-            android:text="Restaurants"
-            android:textAlignment="center" />
-
-    </LinearLayout>
-
-</androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,3 +1,3 @@
 package uz.pdp.uiexam
 
-data class Category(val image:Int,val name:String)
+data class Category(val image:String,val name:String)
